@@ -10,19 +10,35 @@ module.exports = {
         const { nome } = req.query;
         
         //Pesquisa os pordutos em que o nome seja igual ao informado no header, ou trás toda a collection de produtos
-        const produtos = await Produto.find((nome != undefined ? {"nome": { $in: [nome] }} : undefined));        
-        
-        //retorna os produtos
-        return res.json(produtos);
+        const produtos = await Produto.find((nome != undefined ? {"nome": { $in: [nome] }} : undefined), function(e, result) {   
+            //Seta status de ok
+            res.status(200);                  
+            if (e || result == null || result.length == 0) {                                            
+                //retorna o info
+                return res.json({info: 'Nenhum produto encontrado.'});                
+            }
+            else {                
+                //retorna o produto
+                return res.json(result);
+            }            
+        });
     },
 
     //busca um unico produto {:id}
     async show( req, res ) {                
         //Pesquisa o produto com base no id
-        const produto = await Produto.findById(req.params.id);
-
-        //Retorna o produto
-        return res.json(produto);
+        const produto = await Produto.findById(req.params.id, function(e, result) {   
+            //Seta status de ok
+            res.status(200);                                 
+            if (e || result == null || result.length == 0) {                                            
+                //retorna o info
+                return res.json({info: 'Nenhum produto encontrado.'});                
+            }
+            else {                
+                //retorna o produto
+                return res.json(result);
+            }            
+        });
     },
 
     //Cria o produto
@@ -43,10 +59,20 @@ module.exports = {
             nome,
             descricao,
             valor
-        });
-
-        //retorna o produto criado
-        return res.json(produto);
+        }, function(e, result) {                        
+            if (e) {            
+                //Seta status de internal server error 
+                res.status(500);
+                //retorna o erro
+                return res.json({info: 'falha ao salvar produto.'});                
+            }
+            else {
+                //Seta status de created
+                res.status(201);                
+                //retorna o produto criado
+                return res.json(result);
+            }            
+        });                
     },
 
     //Atualiza o produto
@@ -54,18 +80,38 @@ module.exports = {
         //Recupera o id
         const filter = { _id: req.params.id };
         //Recupera o produto e altera seus valores com base no novo json, (new: true) - retorna o objeto alterado
-        const produto = await Produto.findOneAndUpdate(filter, req.body, {new: true});
-
-        //retorna o produto alterado com os novos valores
-        return res.json(produto);        
+        const produto = await Produto.findOneAndUpdate(filter, req.body, {new: true}, function(e, result) {                        
+            if (e) {            
+                //Seta status de internal server error 
+                res.status(500);
+                //retorna o erro
+                return res.json({info: 'falha ao atualizar produto.'});                
+            }
+            else {
+                //Seta status de ok
+                res.status(200);                
+                //retorna o produto criado
+                return res.json(result);
+            }            
+        });        
     },
 
     //Remove o produto
     async delete( req, res) {
         //Recupera o produto com base no id e deleta o mesmo da base
-        const produtos = await Produto.findByIdAndDelete(req.params.id);
-
-        //Retorna o produto o produto deletado
-        return res.json(produtos);
+        const produtos = await Produto.findByIdAndDelete(req.params.id, function(e, result) {                        
+            if (e) {            
+                //Seta status de internal server error 
+                res.status(500);
+                //retorna o erro
+                return res.json({info: 'falha ao remover produto.'});                
+            }
+            else {
+                //Seta status de ok
+                res.status(200);                
+                //retorna o produto criado
+                return res.json(result);
+            }            
+        });       
     }
 };
