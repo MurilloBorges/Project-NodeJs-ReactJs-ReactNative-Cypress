@@ -31,6 +31,12 @@ yarn add express
 yarn add nodemon -D
 //Dependência de banco de dados MongoDB
 yarn add mongoose
+//Dependência de logging
+yarn add winston
+//Dependência de data para montagem do logging
+yard add moment
+//Dependência de path dos arquivos no fonte para montagem do logging
+yard add path
 
 Para subir o server:
 yard dev
