@@ -4,11 +4,14 @@
 - Gerenciador de pacotes utilizado Chocolatey;
 para instalar executar o seguinte comando no power shell com permissão de adiministrador
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+
 - Versão do node utilizada 10.16.1;
 para instalar executar o seguinte comando no cmd com permissão de adiministrador
 cinst nodejs.install --version 10.16.1
+
 - Gerenciador de pacotes também utilizado Yarn;
-	- choco install yarn
+para instalar executar o seguinte comando no cmd com permisão de adiministrador
+choco install yarn
 
 
 //script criado para startar o servidor, toda vez que o código é salvo o servidor é startado novamente;
@@ -16,12 +19,14 @@ cinst nodejs.install --version 10.16.1
 	"dev": "nodemon src/server.js"
 },
 
+
 Conexão com o banco de dados
 User: squads
 Password: squads
 url: mongodb+srv://squads:<password>@cluster0-w8s7a.mongodb.net/test?retryWrites=true&w=majority
 autentication database: admin
 url conect mongoDB compass: mongodb+srv://squads:<password>@cluster0-w8s7a.mongodb.net/test
+
 
 Repositório de instalação C:\Repositório\FontesNodeJs\-SQUADS-Prova-Backend-\squads\backend
 Dependências instaladas
@@ -38,8 +43,10 @@ yard add moment
 //Dependência de path dos arquivos no fonte para montagem do logging
 yard add path
 
+
 Para subir o server:
 yard dev
+
 
 Utilizado postman para testar a api
 url das resquisições:
