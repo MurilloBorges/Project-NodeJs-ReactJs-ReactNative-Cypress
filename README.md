@@ -38,8 +38,6 @@ yarn add nodemon -D
 yarn add mongoose
 //Dependência de logging
 yarn add winston
-//Dependência de data para montagem do logging
-yard add moment
 //Dependência de path dos arquivos no fonte para montagem do logging
 yard add path
 

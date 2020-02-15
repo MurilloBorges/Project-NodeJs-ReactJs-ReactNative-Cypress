@@ -1,12 +1,10 @@
 'use strict'; //Melhora qualidade do código
+
 const winston = require('winston'); //Importa biblioteca do winston
-const moment = require('moment'); //Importa biblioteca de data
 const path = require('path'); //Importa bilioteca de path dos arquivos no fonte
 
 //Mapeia o diretório para salvar o arquivo de log
 const filename = `${__dirname}/../logs/log-api.log`;
-//Cria o formato de data
-const tsFormat = () => moment().format('YYYY-MM-DD hh:mm:ss').trim();
 
 // Create a new winston logger instance with two tranports: Console, and File
 const logger = winston.createLogger({ 
@@ -16,7 +14,7 @@ const logger = winston.createLogger({
     //Define o tipo da mensagem
     winston.format.simple(),
     //Define o horário
-    winston.format.timestamp({format: tsFormat}),
+    winston.format.timestamp({format: 'YYYY-MM-DD HH:mm:ss'}),
     //Pega o nome do arquivo em que foi feita a chamada de log
     winston.format.label({ label: path.basename(process.mainModule.filename) }),
     //Define a mensagem a ser mostrada

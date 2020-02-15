@@ -8,7 +8,6 @@
   },
   "dependencies": {
     "express": "^4.17.1",
-    "moment": "^2.24.0",
     "mongoose": "^5.9.0",
     "path": "^0.12.7",
     "winston": "^3.2.1"
