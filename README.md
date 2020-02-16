@@ -39,7 +39,11 @@ yarn add mongoose
 //Dependência de logging
 yarn add winston
 //Dependência de path dos arquivos no fonte para montagem do logging
-yard add path
+yarn add path
+//Dependência de diretório
+yarn add fs
+//Dependência de geração de log das requisições
+yarn add morgan
 
 
 Para subir o server:
