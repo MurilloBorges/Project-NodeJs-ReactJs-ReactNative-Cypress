@@ -44,6 +44,8 @@ yarn add path
 yarn add fs
 //Dependência de geração de log das requisições
 yarn add morgan
+//Dependência de autenticação jsonwebtoken: implementa o protocolo JSON Web Token e dotenv: gerencia facilmente variáveis de ambiente;
+yarn add jsonwebtoken dotenv
 
 
 Para subir o server:

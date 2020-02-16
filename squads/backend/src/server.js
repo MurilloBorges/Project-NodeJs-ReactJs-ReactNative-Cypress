@@ -7,6 +7,7 @@ const mongoose = require('mongoose'); //Importando biblioteca do mongoDB
 const routes = require('./routes'); //Importando as rotas 
 const morgan = require('morgan'); //Importando biblioteca de log das requisições
 
+
 const server = express(); //Iniciando servidor
 
 //Conexão com o banco de dados //cria o banco sozinho se não existir
