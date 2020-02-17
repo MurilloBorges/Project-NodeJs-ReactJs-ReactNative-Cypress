@@ -15,9 +15,7 @@ module.exports = {
                 //Seta status de ok
                 res.status(200);                  
                 if (e || result == null || result.length == 0) {  
-                    logger.error(e);                                          
-                    //retorna o info
-                    logger.info('Retorno: Nenhum produto encontrado.');
+                    logger.error(e).info('Retorno: Nenhum produto encontrado.');
                     return res.json({info: 'Nenhum produto encontrado.'});                
                 }
                 else {                
@@ -26,10 +24,8 @@ module.exports = {
                 }            
             });
         } catch (e) {                        
-            logger.error(e);
-            logger.info('Retorno: Nenhum produto encontrado.');
-            res.status(500);
-            return res.json({info: 'Nenhum produto encontrado.'});
+            logger.error(e).info('Retorno: Nenhum produto encontrado.');
+            return res.status(500).json({info: 'Nenhum produto encontrado.'});
         }
     },
 
@@ -41,9 +37,7 @@ module.exports = {
                 //Seta status de ok
                 res.status(200);                                 
                 if (e || result == null || result.length == 0) {
-                    logger.error(e);  
-                    logger.info('Retorno: Nenhum produto encontrado.');                                          
-                    //retorna o info
+                    logger.error(e).info('Retorno: Nenhum produto encontrado.');                                                              
                     return res.json({info: 'Nenhum produto encontrado.'});                
                 }
                 else {                
@@ -52,10 +46,8 @@ module.exports = {
                 }            
             });
         } catch (e) {
-            logger.error(e);
-            logger.info('Retorno: Nenhum produto encontrado.');
-            res.status(500);
-            return res.json({info: 'Nenhum produto encontrado.'});
+            logger.error(e).info('Retorno: Nenhum produto encontrado.');
+            return res.status(500).json({info: 'Nenhum produto encontrado.'});
         }
     },
 
@@ -80,25 +72,18 @@ module.exports = {
                 valor
             }, function(e, result) {                        
                 if (e) {     
-                    logger.error(e);                    
-                    logger.info(JSON.stringify(req.body));
-                    //Seta status de internal server error 
-                    res.status(500);
-                    //retorna o erro
-                    return res.json({info: 'falha ao salvar produto.'});                
+                    logger.error(e).info(JSON.stringify(req.body));
+                    //Seta status de internal server error e retorna o erro
+                    return res.status(500).json({info: 'falha ao salvar produto.'});                
                 }
                 else {
-                    //Seta status de created
-                    res.status(201);                
-                    //retorna o produto criado
-                    return res.json(result);
+                    //Seta status de created e retorna o produto criado
+                    return res.status(201).json(result);
                 }            
             });                
         } catch (e) {
-            logger.error(e);            
-            logger.info(JSON.stringify(req.body));
-            res.status(500);
-            return res.json({info: 'falha ao salvar produto.'});
+            logger.error(e).info(JSON.stringify(req.body));
+            return res.status(500).json({info: 'falha ao salvar produto.'});
         }
     },
 
@@ -110,25 +95,16 @@ module.exports = {
             //Recupera o produto e altera seus valores com base no novo json, (new: true) - retorna o objeto alterado
             const produto = await Produto.findOneAndUpdate(filter, req.body, {new: true}, function(e, result) {                        
                 if (e || result == null || result.length == 0) { 
-                    logger.error(e); 
-                    logger.info(JSON.stringify(req.body));
-                    //Seta status de internal server error 
-                    res.status(500);
-                    //retorna o erro
-                    return res.json({info: 'falha ao atualizar produto.'});                
+                    logger.error(e).info(JSON.stringify(req.body));                    
+                    return res.status(500).json({info: 'falha ao atualizar produto.'});                
                 }
-                else {
-                    //Seta status de ok
-                    res.status(200);                
-                    //retorna o produto criado
-                    return res.json(result);
+                else {                    
+                    return res.status(200).json(result);
                 }            
             });        
         } catch (e) {
-            logger.error(e);
-            logger.info(JSON.stringify(req.body));
-            res.status(500);                    
-            return res.json({info: 'falha ao atualizar produto.'});
+            logger.error(e).info(JSON.stringify(req.body));
+            return res.status(500).json({info: 'falha ao atualizar produto.'});
         }
     },
 
@@ -138,25 +114,16 @@ module.exports = {
             //Recupera o produto com base no id e deleta o mesmo da base
             const produtos = await Produto.findByIdAndDelete(req.params.id, function(e, result) {                        
                 if (e || result == null || result.length == 0) { 
-                    logger.error(e);
-                    logger.info('Retorno: falha ao remover produto.');           
-                    //Seta status de internal server error 
-                    res.status(500);
-                    //retorna o erro
-                    return res.json({info: 'falha ao remover produto.'});                
+                    logger.error(e).info('Retorno: falha ao remover produto.');                               
+                    return res.status(500).json({info: 'falha ao remover produto.'});                
                 }
-                else {
-                    //Seta status de ok
-                    res.status(200);                
-                    //retorna o produto criado
-                    return res.json(result);
+                else {                    
+                    return res.status(200).json(result);
                 }            
             });        
         } catch (e) {
-            logger.error(e); 
-            logger.info('Retorno: falha ao remover produto.');
-            res.status(500);                    
-            return res.json({info: 'falha ao remover produto.'});        
+            logger.error(e).info('Retorno: falha ao remover produto.');
+            return res.status(500).json({info: 'falha ao remover produto.'});        
         }       
     }
 };

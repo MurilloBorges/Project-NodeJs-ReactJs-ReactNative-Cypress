@@ -11,7 +11,7 @@ if (!fs.existsSync(logDir)) {
   fs.mkdirSync(logDir);
 }
 
-const filename = `${__dirname}/../${logDir}/log-api.log`; //Mapeia o diretório para salvar o arquivo de log
+const filename = `${logDir}/log-api.log`; //Mapeia o diretório para salvar o arquivo de log
 
 //Cria uma nova instância de logger do winston com dois transportes: Console, e File
 const logger = winston.createLogger({   

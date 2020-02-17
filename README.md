@@ -46,15 +46,32 @@ yarn add fs
 yarn add morgan
 //Dependência de autenticação jsonwebtoken: implementa o protocolo JSON Web Token e dotenv: gerencia facilmente variáveis de ambiente;
 yarn add jsonwebtoken dotenv
+//Dependência de utilidades do node
+yarn add util
 
 
 Para subir o server:
 yard dev
-
-
-Utilizado postman para testar a api
 url das resquisições:
+Secret de geração do token teste@squads16202002, criptografado em hash md5
+--Gerar o token no endpoint de login, esse token é valido por 1 dia, ele serve para utilizar os outros endpoints.
+
+Post: http://localhost:8080/login	
+	-definir no header o conten-type: application/json
+	-no body selecionar tipo de envio raw
+	-json de envio:
+	{
+		"username": "squads",
+		"password": "squads"
+	}
+	-json de resposta:
+	{
+		"auth": true,
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNTgxODkwNTQ2LCJleHAiOjE1ODE4OTA1NDZ9.Tbp26hvFnldxn798ANYrbONE-xlY8DnFrlGzvP6L-no"
+	}	
+	
 Post: http://localhost:8080/produtos
+	-definir no Authorization definir o type de authorization como 'Bearer Type' e no 'Token' colar o token gerado no endpoint de login
 	-definir no header o conten-type: application/json
 	-no body selecionar tipo de envio raw
 	-json de envio:
@@ -75,15 +92,19 @@ Post: http://localhost:8080/produtos
 	}
 
 Get: http://localhost:8080/produtos ou http://localhost:8080/produtos?nome=Produto teste
+	-definir no Authorization definir o type de authorization como 'Bearer Type' e no 'Token' colar o token gerado no endpoint de login
 	-retorna todoss os produtos, ou um unico produto com base na key (nome) e value (Produto teste) informados no Query Params
 
 Get: http://localhost:8080/produtos/5e4698640319a04908b6ec6f
+	-definir no Authorization definir o type de authorization como 'Bearer Type' e no 'Token' colar o token gerado no endpoint de login
 	-retorna o produto especifico filtrado pelo id
 	
 Delete: http://localhost:8080/produtos/5e4698640319a04908b6ec6f
+	-definir no Authorization definir o type de authorization como 'Bearer Type' e no 'Token' colar o token gerado no endpoint de login
 	-retorna o json com o produto removido da base
 	
 Patch: http://localhost:8080/produtos/5e4698640319a04908b6ec6f
+	-definir no Authorization definir o type de authorization como 'Bearer Type' e no 'Token' colar o token gerado no endpoint de login
 	-definir no header o conten-type: application/json
 	-no body selecionar tipo de envio raw
 	-json de envio com as informações que deseja alteração:
