@@ -6,3 +6,4 @@
 
 [2020-02-16 22:27:40] [server.js] info: "GET /produtos HTTP/1.1" 200 1106 - 161.844 ms "-" "PostmanRuntime/7.22.0"
 
+[2020-02-20 17:48:11] [server.js] info: Server runing
