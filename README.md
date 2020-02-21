@@ -48,6 +48,8 @@ yarn add morgan
 yarn add jsonwebtoken dotenv
 //Dependência de utilidades do node
 yarn add util
+//Dependência cors
+yarn add cors
 
 
 Para subir o server:

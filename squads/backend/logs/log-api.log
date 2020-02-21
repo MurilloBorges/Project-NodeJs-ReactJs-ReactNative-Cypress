@@ -7,3 +7,57 @@
 [2020-02-16 22:27:40] [server.js] info: "GET /produtos HTTP/1.1" 200 1106 - 161.844 ms "-" "PostmanRuntime/7.22.0"
 
 [2020-02-20 17:48:11] [server.js] info: Server runing
+[2020-02-21 08:40:21] [server.js] info: Server runing
+[2020-02-21 08:40:47] [server.js] info: Retorno: Token não fornecido
+[2020-02-21 08:40:47] [server.js] info: "GET /produtos HTTP/1.1" 401 31 - 8.714 ms "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-21 08:40:47] [server.js] info: Retorno: Token não fornecido
+[2020-02-21 08:40:47] [server.js] info: "GET /favicon.ico HTTP/1.1" 401 31 - 0.660 ms "http://localhost:3333/produtos" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-21 09:36:42] [server.js] info: Server runing
+[2020-02-21 16:01:09] [server.js] info: Retorno: Token não fornecido
+[2020-02-21 16:01:09] [server.js] info: "GET / HTTP/1.1" 401 31 - 10.542 ms "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-21 16:01:09] [server.js] info: Retorno: Token não fornecido
+[2020-02-21 16:01:09] [server.js] info: "GET /favicon.ico HTTP/1.1" 401 31 - 0.679 ms "http://localhost:3333/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-21 16:31:28] [server.js] info: Retorno: Token não fornecido
+[2020-02-21 16:31:28] [server.js] info: "OPTIONS /login HTTP/1.1" 401 31 - 1.879 ms "http://localhost:3000/login?" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-21 16:34:37] [server.js] info: Server runing
+[2020-02-21 16:35:00] [server.js] info: Retorno: Token não fornecido
+[2020-02-21 16:35:00] [server.js] info: "OPTIONS /login HTTP/1.1" 401 31 - 3.414 ms "http://localhost:3000/login?" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-21 16:35:25] [server.js] info: Retorno: Token não fornecido
+[2020-02-21 16:35:25] [server.js] info: "OPTIONS /login HTTP/1.1" 401 31 - 2.259 ms "http://localhost:3000/login?" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-21 16:36:49] [server.js] info: Retorno: Token não fornecido
+[2020-02-21 16:36:49] [server.js] info: "GET /login HTTP/1.1" 401 31 - 2.699 ms "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-21 16:36:49] [server.js] info: Retorno: Token não fornecido
+[2020-02-21 16:36:49] [server.js] info: "GET /favicon.ico HTTP/1.1" 401 31 - 0.407 ms "http://localhost:3333/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-21 16:38:19] [server.js] info: Retorno: Token não fornecido
+[2020-02-21 16:38:19] [server.js] info: "OPTIONS /login HTTP/1.1" 401 31 - 0.928 ms "http://localhost:3000/login?" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-21 16:39:13] [server.js] info: Retorno: Token não fornecido
+[2020-02-21 16:39:13] [server.js] info: "OPTIONS /login HTTP/1.1" 401 31 - 0.941 ms "http://localhost:3000/login?" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-21 16:40:34] [server.js] info: Server runing
+[2020-02-21 16:40:49] [server.js] info: Server runing
+[2020-02-21 16:41:01] [server.js] info: Retorno: Token não fornecido
+[2020-02-21 16:41:01] [server.js] info: "OPTIONS /login HTTP/1.1" 401 31 - 3.318 ms "http://localhost:3000/login?" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-21 16:41:54] [server.js] info: Server runing
+[2020-02-21 16:47:03] [server.js] info: Server runing
+[2020-02-21 16:47:06] [server.js] info: Server runing
+[2020-02-21 16:47:35] [server.js] info: "POST /login HTTP/1.1" 200 161 - 68.120 ms "http://localhost:3000/login?" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-21 16:51:04] [server.js] error: e is not defined
+[2020-02-21 16:51:04] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-21 16:51:04] [server.js] info: "POST /login HTTP/1.1" 500 37 - 3.178 ms "http://localhost:3000/login?" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-21 16:53:07] [server.js] error: e is not defined
+[2020-02-21 16:53:07] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-21 16:53:07] [server.js] info: "POST /login HTTP/1.1" 500 37 - 2.276 ms "http://localhost:3000/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+

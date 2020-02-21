@@ -6,6 +6,7 @@ const logger = require('./middlewares/logger'); //Importando logging
 const mongoose = require('mongoose'); //Importando biblioteca do mongoDB
 const routes = require('./routes'); //Importando as rotas 
 const morgan = require('morgan'); //Importando biblioteca de log das requisições
+const cors = require('cors');
 
 const server = express(); //Iniciando servidor
 
@@ -19,6 +20,7 @@ mongoose.connect('mongodb+srv://squads:squads@cluster0-w8s7a.mongodb.net/squads?
     useNewUrlParser: true
 });
 
+server.use(cors());
 //Define interface de fluxo utilizada pelo winston, define também o formato da mensagem
 server.use(morgan('":method :url HTTP/:http-version" :status :res[content-length] - :response-time ms ":referrer" ":user-agent"', { stream: logger.stream })); 
 server.use(express.json()); //Define que as informações a serem trasitadas nas requisições e respostas será em json 
