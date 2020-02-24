@@ -13,7 +13,7 @@ module.exports = {
                     }),
                 });                
             } else {
-                logger.error(e).info(JSON.stringify(req.body));
+                logger.info(JSON.stringify(req.body));
                 return res.status(401).json({ auth: false, token: null });
             }
         } catch (e) {

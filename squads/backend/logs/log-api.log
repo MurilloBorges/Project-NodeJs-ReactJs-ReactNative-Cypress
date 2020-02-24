@@ -1,63 +1,175 @@
-[2020-02-16 22:27:23] [server.js] info: "GET /produtos HTTP/1.1" 200 1106 - 1360.993 ms "-" "PostmanRuntime/7.22.0"
+[2020-02-22 14:40:46] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-22 14:40:46] [server.js] info: "POST /login HTTP/1.1" 401 27 - 1.096 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
 
-[2020-02-16 22:27:35] [server.js] error: invalid signature
-[2020-02-16 22:27:35] [server.js] info: Retorno: Token inválido
-[2020-02-16 22:27:35] [server.js] info: "GET /produtos HTTP/1.1" 401 26 - 2.707 ms "-" "PostmanRuntime/7.22.0"
+[2020-02-22 14:40:56] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-22 14:40:56] [server.js] info: "POST /login HTTP/1.1" 401 27 - 0.764 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
 
-[2020-02-16 22:27:40] [server.js] info: "GET /produtos HTTP/1.1" 200 1106 - 161.844 ms "-" "PostmanRuntime/7.22.0"
+[2020-02-22 14:41:51] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-22 14:41:51] [server.js] info: "POST /login HTTP/1.1" 401 27 - 0.931 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
 
-[2020-02-20 17:48:11] [server.js] info: Server runing
-[2020-02-21 08:40:21] [server.js] info: Server runing
-[2020-02-21 08:40:47] [server.js] info: Retorno: Token não fornecido
-[2020-02-21 08:40:47] [server.js] info: "GET /produtos HTTP/1.1" 401 31 - 8.714 ms "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+[2020-02-22 14:42:28] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-22 14:42:28] [server.js] info: "POST /login HTTP/1.1" 401 27 - 0.794 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
 
-[2020-02-21 08:40:47] [server.js] info: Retorno: Token não fornecido
-[2020-02-21 08:40:47] [server.js] info: "GET /favicon.ico HTTP/1.1" 401 31 - 0.660 ms "http://localhost:3333/produtos" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+[2020-02-22 14:42:52] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-22 14:42:52] [server.js] info: "POST /login HTTP/1.1" 401 27 - 0.809 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
 
-[2020-02-21 09:36:42] [server.js] info: Server runing
-[2020-02-21 16:01:09] [server.js] info: Retorno: Token não fornecido
-[2020-02-21 16:01:09] [server.js] info: "GET / HTTP/1.1" 401 31 - 10.542 ms "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+[2020-02-22 14:42:55] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-22 14:42:55] [server.js] info: "POST /login HTTP/1.1" 401 27 - 0.911 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
 
-[2020-02-21 16:01:09] [server.js] info: Retorno: Token não fornecido
-[2020-02-21 16:01:09] [server.js] info: "GET /favicon.ico HTTP/1.1" 401 31 - 0.679 ms "http://localhost:3333/" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+[2020-02-22 14:42:56] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-22 14:42:56] [server.js] info: "POST /login HTTP/1.1" 401 27 - 0.849 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
 
-[2020-02-21 16:31:28] [server.js] info: Retorno: Token não fornecido
-[2020-02-21 16:31:28] [server.js] info: "OPTIONS /login HTTP/1.1" 401 31 - 1.879 ms "http://localhost:3000/login?" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+[2020-02-22 14:42:56] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-22 14:42:56] [server.js] info: "POST /login HTTP/1.1" 401 27 - 0.845 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
 
-[2020-02-21 16:34:37] [server.js] info: Server runing
-[2020-02-21 16:35:00] [server.js] info: Retorno: Token não fornecido
-[2020-02-21 16:35:00] [server.js] info: "OPTIONS /login HTTP/1.1" 401 31 - 3.414 ms "http://localhost:3000/login?" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+[2020-02-22 14:46:42] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-22 14:46:42] [server.js] info: "POST /login HTTP/1.1" 401 27 - 0.958 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
 
-[2020-02-21 16:35:25] [server.js] info: Retorno: Token não fornecido
-[2020-02-21 16:35:25] [server.js] info: "OPTIONS /login HTTP/1.1" 401 31 - 2.259 ms "http://localhost:3000/login?" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+[2020-02-22 14:48:47] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-22 14:48:47] [server.js] info: "POST /login HTTP/1.1" 401 27 - 1.030 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
 
-[2020-02-21 16:36:49] [server.js] info: Retorno: Token não fornecido
-[2020-02-21 16:36:49] [server.js] info: "GET /login HTTP/1.1" 401 31 - 2.699 ms "-" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+[2020-02-22 14:48:57] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-22 14:48:57] [server.js] info: "POST /login HTTP/1.1" 401 27 - 0.569 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
 
-[2020-02-21 16:36:49] [server.js] info: Retorno: Token não fornecido
-[2020-02-21 16:36:49] [server.js] info: "GET /favicon.ico HTTP/1.1" 401 31 - 0.407 ms "http://localhost:3333/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+[2020-02-22 14:49:16] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-22 14:49:16] [server.js] info: "POST /login HTTP/1.1" 401 27 - 0.573 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
 
-[2020-02-21 16:38:19] [server.js] info: Retorno: Token não fornecido
-[2020-02-21 16:38:19] [server.js] info: "OPTIONS /login HTTP/1.1" 401 31 - 0.928 ms "http://localhost:3000/login?" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+[2020-02-22 14:52:40] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-22 14:52:40] [server.js] info: "POST /login HTTP/1.1" 401 27 - 0.737 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
 
-[2020-02-21 16:39:13] [server.js] info: Retorno: Token não fornecido
-[2020-02-21 16:39:13] [server.js] info: "OPTIONS /login HTTP/1.1" 401 31 - 0.941 ms "http://localhost:3000/login?" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+[2020-02-22 14:53:13] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-22 14:53:13] [server.js] info: "POST /login HTTP/1.1" 401 27 - 0.953 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
 
-[2020-02-21 16:40:34] [server.js] info: Server runing
-[2020-02-21 16:40:49] [server.js] info: Server runing
-[2020-02-21 16:41:01] [server.js] info: Retorno: Token não fornecido
-[2020-02-21 16:41:01] [server.js] info: "OPTIONS /login HTTP/1.1" 401 31 - 3.318 ms "http://localhost:3000/login?" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+[2020-02-22 14:55:52] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-22 14:55:52] [server.js] info: "POST /login HTTP/1.1" 401 27 - 0.824 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
 
-[2020-02-21 16:41:54] [server.js] info: Server runing
-[2020-02-21 16:47:03] [server.js] info: Server runing
-[2020-02-21 16:47:06] [server.js] info: Server runing
-[2020-02-21 16:47:35] [server.js] info: "POST /login HTTP/1.1" 200 161 - 68.120 ms "http://localhost:3000/login?" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+[2020-02-22 15:58:24] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-22 15:58:24] [server.js] info: "POST /login HTTP/1.1" 401 27 - 1.437 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
 
-[2020-02-21 16:51:04] [server.js] error: e is not defined
-[2020-02-21 16:51:04] [server.js] info: {"username":"squads","password":"123"}
-[2020-02-21 16:51:04] [server.js] info: "POST /login HTTP/1.1" 500 37 - 3.178 ms "http://localhost:3000/login?" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+[2020-02-22 15:58:26] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-22 15:58:26] [server.js] info: "POST /login HTTP/1.1" 401 27 - 0.921 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
 
-[2020-02-21 16:53:07] [server.js] error: e is not defined
-[2020-02-21 16:53:07] [server.js] info: {"username":"squads","password":"123"}
-[2020-02-21 16:53:07] [server.js] info: "POST /login HTTP/1.1" 500 37 - 2.276 ms "http://localhost:3000/login" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+[2020-02-22 15:59:39] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-22 15:59:39] [server.js] info: "POST /login HTTP/1.1" 401 27 - 0.637 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-22 16:00:34] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-22 16:00:34] [server.js] info: "POST /login HTTP/1.1" 401 27 - 0.698 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-22 16:01:45] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-22 16:01:45] [server.js] info: "POST /login HTTP/1.1" 401 27 - 0.970 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-22 16:01:52] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-22 16:01:52] [server.js] info: "POST /login HTTP/1.1" 401 27 - 0.690 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-22 18:23:57] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-22 18:23:57] [server.js] info: "POST /login HTTP/1.1" 401 27 - 0.904 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-22 18:25:28] [server.js] info: "POST /login HTTP/1.1" 200 161 - 4.435 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-22 18:25:32] [server.js] info: "POST /login HTTP/1.1" 200 161 - 0.947 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-22 18:25:46] [server.js] info: "POST /login HTTP/1.1" 200 161 - 0.735 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-22 18:27:04] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-22 18:27:04] [server.js] info: "POST /login HTTP/1.1" 401 27 - 1.019 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-22 18:37:10] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-22 18:37:10] [server.js] info: "POST /login HTTP/1.1" 401 27 - 0.912 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-22 18:37:12] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-22 18:37:12] [server.js] info: "POST /login HTTP/1.1" 401 27 - 0.769 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-22 18:37:22] [server.js] info: "POST /login HTTP/1.1" 200 161 - 0.509 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-22 18:38:25] [server.js] info: "POST /login HTTP/1.1" 200 161 - 0.540 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-22 18:38:31] [server.js] info: "POST /login HTTP/1.1" 200 161 - 0.488 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-22 18:38:58] [server.js] info: "POST /login HTTP/1.1" 200 161 - 0.878 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-22 18:40:32] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-22 18:40:32] [server.js] info: "POST /login HTTP/1.1" 401 27 - 0.607 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-22 18:49:40] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-22 18:49:40] [server.js] info: "POST /login HTTP/1.1" 401 27 - 0.815 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-22 18:50:18] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-22 18:50:18] [server.js] info: "POST /login HTTP/1.1" 401 27 - 0.786 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-22 18:50:35] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-22 18:50:35] [server.js] info: "POST /login HTTP/1.1" 401 27 - 0.701 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-22 18:52:54] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-22 18:52:54] [server.js] info: "POST /login HTTP/1.1" 401 27 - 0.854 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-22 18:53:25] [server.js] info: {"username":"squads","password":"556"}
+[2020-02-22 18:53:25] [server.js] info: "POST /login HTTP/1.1" 401 27 - 0.692 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-22 18:53:50] [server.js] info: {"username":"squads","password":"556"}
+[2020-02-22 18:53:50] [server.js] info: "POST /login HTTP/1.1" 401 27 - 0.773 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-22 18:54:33] [server.js] info: {"username":"squads","password":"556"}
+[2020-02-22 18:54:33] [server.js] info: "POST /login HTTP/1.1" 401 27 - 0.751 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-22 18:54:44] [server.js] info: {"username":"squads","password":"556"}
+[2020-02-22 18:54:44] [server.js] info: "POST /login HTTP/1.1" 401 27 - 0.690 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-23 16:56:36] [server.js] info: {"username":"squads","password":"556"}
+[2020-02-23 16:56:36] [server.js] info: "POST /login HTTP/1.1" 401 27 - 3.734 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-23 17:05:07] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-23 17:05:07] [server.js] info: "POST /login HTTP/1.1" 401 27 - 4.483 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-23 17:08:51] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-23 17:08:51] [server.js] info: "POST /login HTTP/1.1" 401 27 - 9.204 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-23 17:09:00] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-23 17:09:00] [server.js] info: "POST /login HTTP/1.1" 401 27 - 3.904 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-23 17:09:00] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-23 17:09:00] [server.js] info: "POST /login HTTP/1.1" 401 27 - 2.871 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-23 17:10:25] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-23 17:10:25] [server.js] info: "POST /login HTTP/1.1" 401 27 - 3.809 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-23 17:16:48] [server.js] info: "POST /login HTTP/1.1" 200 161 - 5.110 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-23 17:18:39] [server.js] info: "POST /login HTTP/1.1" 200 161 - 5.492 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-23 17:26:52] [server.js] info: "POST /login HTTP/1.1" 200 161 - 3.519 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-23 21:28:04] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-23 21:28:04] [server.js] info: "POST /login HTTP/1.1" 401 27 - 5.482 ms "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-23 21:28:09] [server.js] info: "POST /login HTTP/1.1" 200 161 - 3.681 ms "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-23 21:30:43] [server.js] info: "POST /login HTTP/1.1" 200 161 - 2.368 ms "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-23 21:38:34] [server.js] info: "POST /login HTTP/1.1" 200 161 - 5.637 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-23 21:39:27] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-23 21:39:27] [server.js] info: "POST /login HTTP/1.1" 401 27 - 3.725 ms "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-23 21:51:00] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-23 21:51:00] [server.js] info: "POST /login HTTP/1.1" 401 27 - 3.348 ms "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-23 21:55:42] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-23 21:55:42] [server.js] info: "POST /login HTTP/1.1" 401 27 - 3.717 ms "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-23 21:55:57] [server.js] info: "POST /login HTTP/1.1" 200 161 - 3.467 ms "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-23 22:06:24] [server.js] info: {"username":"","password":""}
+[2020-02-23 22:06:24] [server.js] info: "POST /login HTTP/1.1" 401 27 - 4.486 ms "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-23 22:06:31] [server.js] info: {"username":"","password":""}
+[2020-02-23 22:06:31] [server.js] info: "POST /login HTTP/1.1" 401 27 - 6.078 ms "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-23 22:07:15] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-23 22:07:15] [server.js] info: "POST /login HTTP/1.1" 401 27 - 7.672 ms "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-23 22:08:12] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-23 22:08:12] [server.js] info: "POST /login HTTP/1.1" 401 27 - 5.180 ms "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-23 22:08:40] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-23 22:08:40] [server.js] info: "POST /login HTTP/1.1" 401 27 - 2.664 ms "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
 

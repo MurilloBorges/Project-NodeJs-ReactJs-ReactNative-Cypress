@@ -7,10 +7,12 @@
 
 .login-container form {    
     width: 100%;    
-    margin: 0 50% 0 50%;
+    margin: 0 40% 0 40%;
     min-width: 300px;
     display: flex;
     flex-direction: column;
+    background: #fff;
+    padding: 20px;    
 }
 
 .login-container form input {
@@ -40,7 +42,7 @@
 }
 
 .login-container img {
-    height: 500%;
+    height: 50%;
     width: 50%;
     margin: auto;
 }
