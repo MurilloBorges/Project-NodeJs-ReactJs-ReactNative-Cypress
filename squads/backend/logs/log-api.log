@@ -173,3 +173,26 @@
 [2020-02-23 22:08:40] [server.js] info: {"username":"squads","password":"123"}
 [2020-02-23 22:08:40] [server.js] info: "POST /login HTTP/1.1" 401 27 - 2.664 ms "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
 
+[2020-02-23 22:21:51] [server.js] info: Server runing
+[2020-02-23 22:24:34] [server.js] info: {"username":"sjsd","password":"123"}
+[2020-02-23 22:24:34] [server.js] info: "POST /login HTTP/1.1" 401 27 - 81.504 ms "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-23 22:24:43] [server.js] info: "POST /login HTTP/1.1" 200 161 - 2.991 ms "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-23 22:28:02] [server.js] info: "POST /login HTTP/1.1" 200 161 - 1.019 ms "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-23 22:28:58] [server.js] info: "POST /login HTTP/1.1" 200 161 - 0.920 ms "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-23 22:30:51] [server.js] info: "POST /login HTTP/1.1" 200 161 - 1.021 ms "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-23 22:32:44] [server.js] info: "POST /login HTTP/1.1" 200 161 - 0.689 ms "http://localhost:3000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-23 22:34:09] [server.js] info: {"username":"squads","password":"123"}
+[2020-02-23 22:34:09] [server.js] info: "POST /login HTTP/1.1" 401 27 - 1.264 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-23 22:34:21] [server.js] info: "POST /login HTTP/1.1" 200 161 - 0.755 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-23 23:42:36] [server.js] info: "POST /login HTTP/1.1" 200 161 - 0.846 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+
+[2020-02-24 00:11:02] [server.js] info: "POST /login HTTP/1.1" 200 161 - 0.839 ms "http://localhost:3000/login" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
+

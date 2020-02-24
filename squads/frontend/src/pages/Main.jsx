@@ -33,8 +33,9 @@ export default function Main({ history }) {
     } 
 
     return (        
-        <div className="main-container">
-            <form onSubmit={handleSubmit}>                                
+        <div className="main-container">            
+            <form onSubmit={handleSubmit}>                  
+                <h1>Cadastrar Produto</h1><hr/>                                              
                 <input type="text" autoFocus placeholder="Digite o nome"
                     value={nome} onChange={e => setNome(e.target.value)}
                 />
@@ -44,7 +45,10 @@ export default function Main({ history }) {
                 <input type="text" maxLength="9" placeholder="0,00"
                     value={valor} onChange={e => setValor(e.target.value)}
                 />
-                <button type="submit">Salvar</button>
+                <div className="main-frames">
+                    <button type="submit" id="salvar">Salvar</button>
+                    <button type="submit" id="remover">Remover</button>
+                </div>
             </form>
         </div>
     );
