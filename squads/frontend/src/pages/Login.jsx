@@ -4,6 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import './Login.css';
 import logo from '../assets/login.svg';
 import api from '../services/api';
+import { login } from "../services/auth";
 
 export default function Login({ history }) {
     const [username, setUsername] = useState('');                
@@ -19,7 +20,8 @@ export default function Login({ history }) {
             await api.post('/login', {
                 username, 
                 password,
-            }).then((res) => {                                                          
+            }).then((res) => {   
+                login(res.data.token);                                                       
                 history.push('/main');                
             }).catch((error) => {
                 toast.error('Usuário ou Senha Inválido.');                
