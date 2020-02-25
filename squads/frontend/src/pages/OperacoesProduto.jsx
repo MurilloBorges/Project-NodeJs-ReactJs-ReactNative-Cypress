@@ -5,6 +5,7 @@ import './OperacoesProduto.css';
 import api from '../services/api';
 
 export default function OperacoesProduto({ history }) { 
+    const [id, setId] = useState('');
     const [nome, setNome] = useState('');                
     const [descricao, setDescricao] = useState('');            
     const [valor, setValor] = useState('');
@@ -24,26 +25,40 @@ export default function OperacoesProduto({ history }) {
         e.preventDefault();             
         if (tipoOperacao === 'Cancelar') {            
             limparCampos();
-        } else {   
+        } else {               
             //toast.configure({position: toast.POSITION.TOP_CENTER});                    
             if (!nome || !descricao || !valor) {
                 return toast.error('Todos os campos devem ser prenchidos.'); 
             }
-            try {            
-                await api.post('/produtos', {
-                    nome, 
-                    descricao,
-                    valor,
-                }).then((res) => {                        
-                    if (res.status === 201) {   
-                        toast.success('Produto cadastrado com sucesso.');         
-                    } else {
-                        toast.success('Produto já cadastrado.');         
-                    }
-                    limparCampos();                                
-                }).catch((error) => {
-                    toast.error(`Error: ${error}`);                
-                });
+            try {     
+                if (tipoCrud === 'Cadastrar') {       
+                    await api.post('/produtos', {
+                        nome, 
+                        descricao,
+                        valor,
+                    }).then((res) => {                        
+                        if (res.status === 201) {   
+                            toast.success('Produto cadastrado com sucesso.');         
+                        } else {
+                            toast.success('Produto já cadastrado.');         
+                        }
+                        limparCampos();                                
+                    }).catch((error) => {
+                        toast.error(`Error: ${error}`);                
+                    });
+                } else {
+                    await api.patch('/produtos/' + id, {
+                        nome,
+                        descricao,
+                        valor
+                    }).then((res) => {
+                        if (res.status === 200) {
+                            toast.success('Produto alterado com sucesso.');
+                        }
+                    }).catch((error) => {
+                        toast.error(`Error: ${error}`);                 
+                    })
+                }
             } catch(e) {
                 toast.error(`Falha na requisição: ${e}`);
             }
