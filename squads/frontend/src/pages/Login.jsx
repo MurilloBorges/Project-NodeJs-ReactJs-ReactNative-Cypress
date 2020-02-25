@@ -12,7 +12,8 @@ export default function Login({ history }) {
 
     async function handleSubmit(e) {
         e.preventDefault();           
-        toast.configure({position: toast.POSITION.TOP_CENTER});
+        //toast.configure({position: toast.POSITION.TOP_CENTER});
+        toast.configure();
         if (!username || !password) {
             return toast.error('Preencha usuário e senha para continuar.'); 
         }
@@ -22,7 +23,7 @@ export default function Login({ history }) {
                 password,
             }).then((res) => {   
                 login(res.data.token);                                                       
-                history.push('/main');                
+                history.push('/operacoes-produto');                
             }).catch((error) => {
                 toast.error('Usuário ou Senha Inválido.');                
             });

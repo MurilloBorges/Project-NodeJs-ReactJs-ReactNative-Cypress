@@ -1,0 +1,120 @@
+.operacoes-produto-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.operacoes-produto-container h1 {
+    align-self: flex-start;
+    margin: 10px 0 0 0;    
+}
+
+.operacoes-produto-container hr {    
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 2px solid #eee;    
+}
+
+.operacoes-produto-container form {    
+    width: 60%;        
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 20px;    
+}
+
+.operacoes-produto-container form input {
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    height: 48px;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+.operacoes-produto-container form input::placeholder {
+    color: #999;
+}
+
+.operacoes-produto-container form button {
+    margin-top: 10px;
+    border: 0;
+    border-radius: 4px;
+    height: 48px;
+    font-size: 16px;    
+    font-weight: bold;
+    color: #FFF;
+    cursor: pointer;
+    padding: 0 20px 0 20px;
+}
+
+.operacoes-produto-container #salvar {
+    background: #07bc0c;
+    margin: 20px 0 0 20px;    
+}
+
+.operacoes-produto-container #cancelar {
+    background: #e74c3c;
+    margin: 20px 0 0 0;
+}
+
+.operacoes-produto-container h3 {
+    margin-top: 15px;
+}
+
+.listar-produtos-container {
+    width: 80%;        
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 20px; 
+}
+
+.listar-produtos-container input {
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    height: 48px;
+    padding: 0 10px;
+    font-size: 16px;
+    color: #666;
+    width: 90%;
+}
+
+.listar-produtos-container button {
+    margin-top: 10px;
+    border: 0;
+    border-radius: 4px;
+    height: 48px;
+    font-size: 16px;    
+    font-weight: bold;
+    color: #FFF;
+    cursor: pointer;
+    padding: 0 20px 0 20px;
+}
+
+.listar-produtos-container #pesquisar {
+    background: #3498db;
+}
+
+.listar-produtos-container input::placeholder {
+    color: #999;
+}
+
+.operacoes-produto-container #cadastrar {
+    background: #07bc0c;
+    margin: 20px 0 0 0;    
+}
+
+.operacoes-produto-container #voltar {
+    background: #3498db;
+    width: 100px;
+    align-self: flex-end;
+    margin: -20px -20px 10px 0px;
+}
