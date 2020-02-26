@@ -63,7 +63,7 @@
     margin: 20px 0 0 0;
 }
 
-.operacoes-produto-container h3 {
+.operacoes-produto-container h4 {
     margin-top: 15px;
 }
 
@@ -101,6 +101,7 @@
 
 .listar-produtos-container #pesquisar {
     background: #3498db;
+    padding: 10px;
 }
 
 .listar-produtos-container input::placeholder {
@@ -117,4 +118,8 @@
     width: 100px;
     align-self: flex-end;
     margin: -20px -20px 10px 0px;
+}
+
+.listar-produtos-container #produtosView {
+    margin-top: 20px;
 }
