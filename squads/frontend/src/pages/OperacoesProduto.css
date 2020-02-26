@@ -8,23 +8,23 @@
 
 .operacoes-produto-container h1 {
     align-self: flex-start;
-    margin: 10px 0 0 0;    
+    margin: 10px 0 0 0;
 }
 
-.operacoes-produto-container hr {    
+.operacoes-produto-container hr {
     margin-top: 20px;
     margin-bottom: 10px;
     border: 0;
-    border-top: 2px solid #eee;    
+    border-top: 2px solid #eee;
 }
 
-.operacoes-produto-container form {    
-    width: 60%;        
+.operacoes-produto-container form {
+    width: 60%;
     min-width: 300px;
     display: flex;
     flex-direction: column;
     background: #fff;
-    padding: 20px;    
+    padding: 20px;
 }
 
 .operacoes-produto-container form input {
@@ -46,7 +46,7 @@
     border: 0;
     border-radius: 4px;
     height: 48px;
-    font-size: 16px;    
+    font-size: 16px;
     font-weight: bold;
     color: #FFF;
     cursor: pointer;
@@ -55,7 +55,7 @@
 
 .operacoes-produto-container #salvar {
     background: #07bc0c;
-    margin: 20px 0 0 20px;    
+    margin: 20px 0 0 20px;
 }
 
 .operacoes-produto-container #cancelar {
@@ -68,12 +68,12 @@
 }
 
 .listar-produtos-container {
-    width: 80%;        
+    width: 80%;
     min-width: 300px;
     display: flex;
     flex-direction: column;
     background: #fff;
-    padding: 20px; 
+    padding: 20px;
 }
 
 .listar-produtos-container input {
@@ -92,7 +92,7 @@
     border: 0;
     border-radius: 4px;
     height: 48px;
-    font-size: 16px;    
+    font-size: 16px;
     font-weight: bold;
     color: #FFF;
     cursor: pointer;
@@ -109,7 +109,7 @@
 
 .operacoes-produto-container #cadastrar {
     background: #07bc0c;
-    margin: 20px 0 0 0;    
+    margin: 20px 0 0 0;
 }
 
 .operacoes-produto-container #voltar {

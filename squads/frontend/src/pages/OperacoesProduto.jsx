@@ -4,14 +4,15 @@ import 'react-toastify/dist/ReactToastify.css';
 import './OperacoesProduto.css';
 import api from '../services/api';
 
-export default function OperacoesProduto({ history }) { 
+export default function OperacoesProduto({ history }) {
     const [id, setId] = useState('');
-    const [nome, setNome] = useState('');                
-    const [descricao, setDescricao] = useState('');            
+    const [nome, setNome] = useState('');
+    const [descricao, setDescricao] = useState('');
     const [valor, setValor] = useState('');
-    const [tipoOperacao, setTipoOperacao] = useState('');  
-    const [tipoCrud, setTipoCrud] = useState('');   
-    const [filtro, setFiltro] = useState('');      
+    const [tipoOperacao, setTipoOperacao] = useState('');
+    const [tipoCrud, setTipoCrud] = useState('');
+    const [filtro, setFiltro] = useState('');
+    const [tbody, setTbody] = useState();
 
     function limparCampos() {
         setNome('');
@@ -22,29 +23,29 @@ export default function OperacoesProduto({ history }) {
     toast.configure();
 
     async function handleSubmit(e) {
-        e.preventDefault();             
-        if (tipoOperacao === 'Cancelar') {            
+        e.preventDefault();
+        if (tipoOperacao === 'Cancelar') {
             limparCampos();
-        } else {               
+        } else {
             //toast.configure({position: toast.POSITION.TOP_CENTER});                    
             if (!nome || !descricao || !valor) {
-                return toast.error('Todos os campos devem ser prenchidos.'); 
+                return toast.error('Todos os campos devem ser prenchidos.');
             }
-            try {     
-                if (tipoCrud === 'Cadastrar') {       
+            try {
+                if (tipoCrud === 'Cadastrar') {
                     await api.post('/produtos', {
-                        nome, 
+                        nome,
                         descricao,
                         valor,
-                    }).then((res) => {                        
-                        if (res.status === 201) {   
-                            toast.success('Produto cadastrado com sucesso.');         
+                    }).then((res) => {
+                        if (res.status === 201) {
+                            toast.success('Produto cadastrado com sucesso.');
                         } else {
-                            toast.success('Produto já cadastrado.');         
+                            toast.success('Produto já cadastrado.');
                         }
-                        limparCampos();                                
+                        limparCampos();
                     }).catch((error) => {
-                        toast.error(`Error: ${error}`);                
+                        toast.error(`Error: ${error}`);
                     });
                 } else {
                     await api.patch('/produtos/' + id, {
@@ -56,46 +57,58 @@ export default function OperacoesProduto({ history }) {
                             toast.success('Produto alterado com sucesso.');
                         }
                     }).catch((error) => {
-                        toast.error(`Error: ${error}`);                 
+                        toast.error(`Error: ${error}`);
                     })
                 }
-            } catch(e) {
+            } catch (e) {
                 toast.error(`Falha na requisição: ${e}`);
             }
-        }                         
-    } 
+        }
+    }
 
     async function handlePesquisar(e) {
-        e.preventDefault();        
+        e.preventDefault();
         const params = filtro !== '' ? '?nome=' + filtro : '';
         try {
             await api.get('/produtos' + params).then((res) => {
-                console.log(res);
+                console.log(res.data);
                 if (res.data.info !== undefined) {
                     toast.info(res.data.info);
                 } else {
-                    //Montar tabela
+                    setTbody(
+                        res.data.map((data, index) => {
+                            return (
+                                <tr key={data._id}>
+                                    <th scope="row">{index + 1}</th>
+                                    <td>{data.nome}</td>
+                                    <td>{data.descricao}</td>
+                                    <td>{data.valor}</td>
+                                    <td></td>
+                                </tr>
+                            )
+                        })
+                    );
                 }
             }).catch((error) => {
                 toast.error(`Error: ${error}`);
             });
-        } catch(e) {
+        } catch (e) {
             toast.error(`Falha na requisição: ${e}`);
         }
     }
 
     if (tipoCrud === 'Cadastrar' || tipoCrud === 'Alterar') {
-        return (        
-            <div className="operacoes-produto-container">                                   
-                <form onSubmit={handleSubmit}>  
-                    <button type="button" id="voltar" onClick={e => setTipoCrud('Listar')}>Voltar</button>                
-                    <h1>{tipoCrud} Produto</h1><hr/>   
-                    <h3>Nome</h3>  
-                    <input type="text" autoFocus placeholder="Digite o nome" 
+        return (
+            <div className="operacoes-produto-container">
+                <form onSubmit={handleSubmit}>
+                    <button type="button" id="voltar" onClick={e => setTipoCrud('Listar')}>Voltar</button>
+                    <h1>{tipoCrud} Produto</h1><hr />
+                    <h3>Nome</h3>
+                    <input type="text" autoFocus placeholder="Digite o nome"
                         value={nome} onChange={e => setNome(e.target.value)}
                     />
                     <h3>Descrição</h3>
-                    <input type="text" placeholder="Digite a descrição" 
+                    <input type="text" placeholder="Digite a descrição"
                         value={descricao} onChange={e => setDescricao(e.target.value)}
                     />
                     <h3>Valor</h3>
@@ -108,17 +121,32 @@ export default function OperacoesProduto({ history }) {
                     </div>
                 </form>
             </div>
-        );        
-    } else {        
+        );
+    } else {
         return (
-            <div className="operacoes-produto-container" 
-                style={{justifyContent: "flex-start", paddingTop: "30px"}}>                                       
+            <div className="operacoes-produto-container" style={{ justifyContent: "flex-start", paddingTop: "30px" }}>
                 <div className="listar-produtos-container">
                     <h1>Produtos</h1><hr></hr>
                     <h3>Nome</h3>
                     <div className="pesquisa">
                         <input type="text" placeholder="Pesquisar" onChange={e => setFiltro(e.target.value)}></input>
                         <button type="button" id="pesquisar" onClick={handlePesquisar}>Pesquisar</button>
+                    </div>
+                    <div id="produtosView">
+                        <table className="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Nome</th>
+                                    <th scope="col">Descrição</th>
+                                    <th scope="col">Valor</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {tbody}
+                            </tbody>
+                        </table>
                     </div>
                     <button type="button" id="cadastrar" onClick={e => setTipoCrud('Cadastrar')}>Cadastrar produto</button>
                 </div>
