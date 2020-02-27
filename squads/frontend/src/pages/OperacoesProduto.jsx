@@ -76,7 +76,7 @@ export default function OperacoesProduto({ history }){
             await api.get('/produtos' + params).then((res) => {                
                 if (res.data.info !== undefined) {
                     toast.info(res.data.info);
-                } else {
+                } else {                    
                     setTbody(res.data);
                 }
             }).catch((error) => {
@@ -88,12 +88,15 @@ export default function OperacoesProduto({ history }){
     }
 
     async function handleRemover(e, id) {        
-        e.preventDefault();        
-        e.currentTarget.parentNode.parentNode.remove();
-        tbody.splice(tbody.indexOf(tbody.filter(item => item._id === id)[0]), 1);                                
+        e.preventDefault();                        
+        
         try {
             await api.delete('/produtos/' + id).then((res) => {                    
                 toast.success('Produto removido com sucesso.');                
+                tbody.splice(tbody.indexOf(tbody.filter(item => item._id === id)[0]), 1);      
+                const produto = [];
+                tbody.map(data => produto.push(data));        
+                setTbody(produto);
             }).catch((error) => {
                 toast.error(`Error: ${error}`);
             });                        

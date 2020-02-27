@@ -175,3 +175,119 @@
 
 [2020-02-27 15:32:59] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 167.056 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
 
+[2020-02-27 15:38:47] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 166.320 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 15:38:50] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 208.550 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 15:39:13] [server.js] info: "POST /produtos HTTP/1.1" 201 184 - 418.071 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 15:41:06] [server.js] info: "GET /produtos HTTP/1.1" 200 1306 - 167.257 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 15:41:14] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 167.462 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 15:42:12] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 416.485 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 15:42:16] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 1208.987 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 15:42:56] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 212.684 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 15:43:16] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 177.123 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 15:43:20] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 205.864 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 15:43:57] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 191.926 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 15:44:00] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 176.801 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 15:44:18] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 229.903 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 15:44:50] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 450.886 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 15:44:59] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 1358.441 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 15:45:55] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 254.786 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 15:46:13] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 201.099 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 15:46:39] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 195.539 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 15:47:01] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 238.525 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 15:49:34] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 176.727 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 15:50:23] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 258.281 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 15:52:50] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 241.630 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 15:53:04] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 211.005 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 15:53:42] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 182.216 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 15:55:02] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 172.268 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 15:55:18] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 278.615 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 15:56:10] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 160.274 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 15:56:20] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 206.337 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 15:56:47] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 176.179 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 15:58:08] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 575.725 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 15:59:01] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 631.141 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 16:02:44] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 622.764 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 16:02:48] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 248.173 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 16:03:10] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 187.932 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 16:03:52] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 209.875 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 16:04:14] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 261.105 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 16:04:44] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 278.620 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 16:05:27] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 256.547 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 16:06:04] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 258.336 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 16:06:21] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 191.567 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 16:06:29] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 162.470 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 16:16:57] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 1431.024 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 16:18:55] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 179.075 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 16:25:32] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 1825.514 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 16:26:38] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 170.926 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 16:26:43] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 270.135 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 16:27:42] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 169.914 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 16:28:24] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 174.153 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 16:28:35] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 159.460 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 16:30:40] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 184.554 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 16:32:57] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 239.431 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 16:33:12] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 211.376 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 16:33:29] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 188.784 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 16:35:30] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 186.046 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 16:36:38] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 306.790 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 16:40:06] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 275.251 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 16:40:08] [server.js] info: "DELETE /produtos/5e580cd1dc65ec37eee39276 HTTP/1.1" 200 184 - 244.492 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 16:40:12] [server.js] info: "GET /produtos HTTP/1.1" 200 1121 - 252.508 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
