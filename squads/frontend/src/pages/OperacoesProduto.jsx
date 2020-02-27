@@ -87,10 +87,10 @@ export default function OperacoesProduto({ history }){
         }
     }
 
-    async function handleRemover(e, id) {
-        e.currentTarget.parentNode.parentNode.remove();        
-        //tbody.indexOf(e.currentTarget.parentNode.parentNode);
-        e.preventDefault();                                     
+    async function handleRemover(e, id) {        
+        e.preventDefault();        
+        e.currentTarget.parentNode.parentNode.remove();
+        tbody.splice(tbody.indexOf(tbody.filter(item => item._id === id)[0]), 1);                                
         try {
             await api.delete('/produtos/' + id).then((res) => {                    
                 toast.success('Produto removido com sucesso.');                
