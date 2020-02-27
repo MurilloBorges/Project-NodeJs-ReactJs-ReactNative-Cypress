@@ -41,7 +41,8 @@ export default function OperacoesProduto({ history }){
                         valor,
                     }).then((res) => {
                         if (res.status === 201) {
-                            toast.success('Produto cadastrado com sucesso.');
+                            toast.success('Produto cadastrado com sucesso.');                            
+                            tbody.push(res.data);                           
                         } else {
                             toast.info('Produto já cadastrado.');
                         }
@@ -87,11 +88,11 @@ export default function OperacoesProduto({ history }){
     }
 
     async function handleRemover(e, id) {
-        e.currentTarget.parentNode.parentNode.remove();
+        e.currentTarget.parentNode.parentNode.remove();        
+        //tbody.indexOf(e.currentTarget.parentNode.parentNode);
         e.preventDefault();                                     
         try {
-            await api.delete('/produtos/' + id).then((res) => {    
-                console.log(id);
+            await api.delete('/produtos/' + id).then((res) => {                    
                 toast.success('Produto removido com sucesso.');                
             }).catch((error) => {
                 toast.error(`Error: ${error}`);
@@ -147,36 +148,36 @@ export default function OperacoesProduto({ history }){
                                     <th scope="col"></th>
                                 </tr>
                             </thead>
-                            <tbody>                                                             
+                            <tbody>                                   
                                 {tbody.map((data, index) => {   
                                     return (                                
-                                    <tr key={data._id}>
-                                        <th scope="row">{index + 1}</th>
-                                        <td>{data.nome}</td>
-                                        <td>{data.descricao}</td>
-                                        <td>{data.valor}</td>
-                                        <td style={{textAlign: "end"}}>
-                                            <span className="btn btn-warning" style={{marginRight: "10px"}}>
-                                                <svg className="bi bi-tools" style={{width: "1.2em", height: "1.2em",
-                                                    viewBox: "0 0 20 20", fill: "currentColor", xmlns: "http://www.w3.org/2000/svg"}}>
-                                                    <path 
-                                                        fillRule="evenodd" d="M2 3l1-1 3.081 2.2a1 1 0 01.419.815v.07a1 1 0 00.293.708L12.5 11.5l.914-.305a1 1 0 011.023.242l3.356 3.356a1 1 0 010 1.414l-1.586 1.586a1 1 0 01-1.414 0l-3.356-3.356a1 1 0 01-.242-1.023l.305-.914-5.707-5.707a1 1 0 00-.707-.293h-.071a1 1 0 01-.814-.419L2 3zm11.354 9.646a.5.5 0 00-.708.708l3 3a.5.5 0 00.708-.708l-3-3z" clipRule="evenodd">
-                                                    </path>
-                                                    <path 
-                                                        fillRule="evenodd" d="M17.898 4.223a3.003 3.003 0 01-3.679 3.674L7.878 14.15a3 3 0 11-2.027-2.027l6.252-6.341a3 3 0 013.675-3.68l-2.142 2.142L14 6l1.757.364 2.141-2.141zm-13.37 9.019L5 13l.471.242.529.026.287.445.445.287.026.529L7 15l-.242.471-.026.529-.445.287-.287.445-.529.026L5 17l-.471-.242L4 16.732l-.287-.445L3.268 16l-.026-.529L3 15l.242-.471.026-.529.445-.287.287-.445.529-.026z" clipRule="evenodd">
-                                                    </path>
-                                                </svg>                                            
-                                            </span>
-                                            <span className="btn btn-danger" onClick={e => handleRemover(e, data._id)}>                                            
-                                                <svg className="bi bi-trash-fill" style={{width: "1.2em", height: "1.2em",
-                                                    viewBox: "0 0 20 20", fill: "currentColor", xmlns: "http://www.w3.org/2000/svg"}}>
-                                                    <path 
-                                                        fillRule="evenodd" d="M4.5 3a1 1 0 00-1 1v1a1 1 0 001 1H5v9a2 2 0 002 2h6a2 2 0 002-2V6h.5a1 1 0 001-1V4a1 1 0 00-1-1H12a1 1 0 00-1-1H9a1 1 0 00-1 1H4.5zm3 4a.5.5 0 01.5.5v7a.5.5 0 01-1 0v-7a.5.5 0 01.5-.5zM10 7a.5.5 0 01.5.5v7a.5.5 0 01-1 0v-7A.5.5 0 0110 7zm3 .5a.5.5 0 00-1 0v7a.5.5 0 001 0v-7z" clipRule="evenodd">
-                                                    </path>
-                                                </svg>                                            
-                                            </span>
-                                        </td>
-                                    </tr> 
+                                        <tr key={data._id}>
+                                            <th scope="row">{index + 1}</th>
+                                            <td>{data.nome}</td>
+                                            <td>{data.descricao}</td>
+                                            <td>{data.valor}</td>
+                                            <td style={{textAlign: "end"}}>
+                                                <span className="btn btn-warning" style={{marginRight: "10px"}}>
+                                                    <svg className="bi bi-tools" style={{width: "1.2em", height: "1.2em",
+                                                        viewBox: "0 0 20 20", fill: "currentColor", xmlns: "http://www.w3.org/2000/svg"}}>
+                                                        <path 
+                                                            fillRule="evenodd" d="M2 3l1-1 3.081 2.2a1 1 0 01.419.815v.07a1 1 0 00.293.708L12.5 11.5l.914-.305a1 1 0 011.023.242l3.356 3.356a1 1 0 010 1.414l-1.586 1.586a1 1 0 01-1.414 0l-3.356-3.356a1 1 0 01-.242-1.023l.305-.914-5.707-5.707a1 1 0 00-.707-.293h-.071a1 1 0 01-.814-.419L2 3zm11.354 9.646a.5.5 0 00-.708.708l3 3a.5.5 0 00.708-.708l-3-3z" clipRule="evenodd">
+                                                        </path>
+                                                        <path 
+                                                            fillRule="evenodd" d="M17.898 4.223a3.003 3.003 0 01-3.679 3.674L7.878 14.15a3 3 0 11-2.027-2.027l6.252-6.341a3 3 0 013.675-3.68l-2.142 2.142L14 6l1.757.364 2.141-2.141zm-13.37 9.019L5 13l.471.242.529.026.287.445.445.287.026.529L7 15l-.242.471-.026.529-.445.287-.287.445-.529.026L5 17l-.471-.242L4 16.732l-.287-.445L3.268 16l-.026-.529L3 15l.242-.471.026-.529.445-.287.287-.445.529-.026z" clipRule="evenodd">
+                                                        </path>
+                                                    </svg>                                            
+                                                </span>
+                                                <span className="btn btn-danger" onClick={e => handleRemover(e, data._id)}>                                            
+                                                    <svg className="bi bi-trash-fill" style={{width: "1.2em", height: "1.2em",
+                                                        viewBox: "0 0 20 20", fill: "currentColor", xmlns: "http://www.w3.org/2000/svg"}}>
+                                                        <path 
+                                                            fillRule="evenodd" d="M4.5 3a1 1 0 00-1 1v1a1 1 0 001 1H5v9a2 2 0 002 2h6a2 2 0 002-2V6h.5a1 1 0 001-1V4a1 1 0 00-1-1H12a1 1 0 00-1-1H9a1 1 0 00-1 1H4.5zm3 4a.5.5 0 01.5.5v7a.5.5 0 01-1 0v-7a.5.5 0 01.5-.5zM10 7a.5.5 0 01.5.5v7a.5.5 0 01-1 0v-7A.5.5 0 0110 7zm3 .5a.5.5 0 00-1 0v7a.5.5 0 001 0v-7z" clipRule="evenodd">
+                                                        </path>
+                                                    </svg>                                            
+                                                </span>
+                                            </td>
+                                        </tr> 
                                     );                               
                                 })}                            
                             </tbody>

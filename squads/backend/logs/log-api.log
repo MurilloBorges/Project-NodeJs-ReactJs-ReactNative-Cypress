@@ -1,0 +1,69 @@
+[2020-02-27 12:14:12] [server.js] info: Server runing
+[2020-02-27 12:18:09] [server.js] info: "GET /produtos HTTP/1.1" 200 1289 - 1969.031 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 12:18:12] [server.js] error: null
+[2020-02-27 12:18:12] [server.js] info: Retorno: falha ao remover produto.
+[2020-02-27 12:18:12] [server.js] info: "DELETE /produtos/5e57dc628b5f875272180cac HTTP/1.1" 500 36 - 199.699 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 12:18:31] [server.js] info: "GET /produtos HTTP/1.1" 200 1121 - 202.169 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 12:18:36] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 208.117 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 12:19:41] [server.js] info: "POST /produtos HTTP/1.1" 201 178 - 520.054 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 12:19:46] [server.js] info: "GET /produtos HTTP/1.1" 200 1300 - 229.743 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 12:20:05] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 167.679 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 12:20:07] [server.js] error: null
+[2020-02-27 12:20:07] [server.js] info: Retorno: falha ao remover produto.
+[2020-02-27 12:20:07] [server.js] info: "DELETE /produtos/5e57de0cdc65ec37eee3926c HTTP/1.1" 500 36 - 170.160 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 12:20:39] [server.js] info: "POST /produtos HTTP/1.1" 201 180 - 399.257 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 12:20:53] [server.js] info: "GET /produtos HTTP/1.1" 200 1302 - 230.750 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 12:20:56] [server.js] info: "DELETE /produtos/5e57de47dc65ec37eee3926d HTTP/1.1" 200 180 - 212.102 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 12:21:15] [server.js] info: "POST /produtos HTTP/1.1" 201 180 - 427.231 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 12:21:46] [server.js] info: "GET /produtos HTTP/1.1" 200 1302 - 229.453 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 12:21:49] [server.js] info: "DELETE /produtos/5e57de6bdc65ec37eee3926e HTTP/1.1" 200 180 - 211.106 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 12:22:01] [server.js] info: "POST /produtos HTTP/1.1" 201 180 - 435.799 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 12:23:19] [server.js] info: "GET /produtos HTTP/1.1" 200 1302 - 236.129 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 12:23:21] [server.js] info: "DELETE /produtos/5e57de99dc65ec37eee3926f HTTP/1.1" 200 180 - 203.708 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 12:23:30] [server.js] info: "POST /produtos HTTP/1.1" 201 180 - 401.777 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 12:23:40] [server.js] info: "GET /produtos HTTP/1.1" 200 1302 - 175.518 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 12:23:59] [server.js] info: "POST /produtos HTTP/1.1" 201 180 - 341.168 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 12:24:11] [server.js] info: "DELETE /produtos/5e57def2dc65ec37eee39270 HTTP/1.1" 200 180 - 276.357 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 12:27:57] [server.js] info: "GET /produtos HTTP/1.1" 200 1302 - 251.875 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 12:27:58] [server.js] error: null
+[2020-02-27 12:27:58] [server.js] info: Retorno: falha ao remover produto.
+[2020-02-27 12:27:58] [server.js] info: "DELETE /produtos/5e57df0fdc65ec37eee39271 HTTP/1.1" 500 36 - 199.313 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 12:28:04] [server.js] info: "GET /produtos HTTP/1.1" 200 1121 - 175.141 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 12:28:52] [server.js] info: "GET /produtos HTTP/1.1" 304 - - 167.562 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 12:29:04] [server.js] info: "POST /produtos HTTP/1.1" 201 180 - 435.114 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 12:29:11] [server.js] info: "DELETE /produtos/5e57e040dc65ec37eee39272 HTTP/1.1" 200 180 - 220.773 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 12:29:24] [server.js] info: "POST /produtos HTTP/1.1" 201 181 - 394.133 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 12:29:29] [server.js] error: null
+[2020-02-27 12:29:29] [server.js] info: Retorno: falha ao remover produto.
+[2020-02-27 12:29:29] [server.js] info: "DELETE /produtos/5e57e040dc65ec37eee39272 HTTP/1.1" 500 36 - 244.143 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
+[2020-02-27 12:29:36] [server.js] info: "DELETE /produtos/5e57e053dc65ec37eee39273 HTTP/1.1" 200 181 - 217.565 ms "http://localhost:3000/operacoes-produto" "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.116 Safari/537.36"
+
