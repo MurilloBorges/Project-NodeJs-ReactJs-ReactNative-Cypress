@@ -53,15 +53,21 @@ function OperacaoProdutos({ match: { params }, location }) {
           nome,
           descricao,
           valor,
-        });
-  
-        toast.success('Produto alterado com sucesso.');
-  
-        setTimeout(() => {
-          window.location.href = "/produtos";
-        }, 1500);
+        }).then((res) => {
+            if (res.status === 200) {
+                toast.success('Produto alterado com sucesso.');
+            }
+
+            limparCampos();
+
+            setTimeout(() => {
+              window.location.href = "/produtos";
+            }, 1500);
+        }).catch((error) => {
+            toast.error(`Error: ${error.response.data.info}`);
+        });  
       } catch (err) {
-        toast.error(`Error: ${err.response.data}`);
+        toast.error(`Error: ${err}`);
       }
     } else {
       try {
