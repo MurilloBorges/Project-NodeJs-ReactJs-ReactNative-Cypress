@@ -10,13 +10,12 @@ export default function OperacoesProduto({ history }){
     const [descricao, setDescricao] = useState('');
     const [valor, setValor] = useState('');
     const [tipoOperacao, setTipoOperacao] = useState('');
-    const [tipoCrud, setTipoCrud] = useState('');
+    const [tipoCrud, setTipoCrud] = useState();
     const [filtro, setFiltro] = useState('');
     const [tbody, setTbody] = useState([]);
 
-    //window.onload(handlePesquisar());
-
-    function limparCampos() {
+    function limparCampos() {   
+        setId('');     
         setNome('');
         setDescricao('');
         setValor('');
@@ -26,6 +25,7 @@ export default function OperacoesProduto({ history }){
 
     async function handleSubmit(e) {
         e.preventDefault();
+        
         if (tipoOperacao === 'Cancelar') {
             limparCampos();
         } else {
@@ -93,19 +93,19 @@ export default function OperacoesProduto({ history }){
         try {
             await api.delete('/produtos/' + id).then((res) => {                    
                 toast.success('Produto removido com sucesso.');                
-                tbody.splice(tbody.indexOf(tbody.filter(item => item._id === id)[0]), 1);      
-                const produto = [];
-                tbody.map(data => produto.push(data));        
-                setTbody(produto);
             }).catch((error) => {
                 toast.error(`Error: ${error}`);
             });                        
+            tbody.splice(tbody.indexOf(tbody.filter(item => item._id === id)[0]), 1);      
+            const produto = [];
+            tbody.map(data => produto.push(data));        
+            setTbody(produto);
         } catch(e) {
             toast.error(`Falha na requisição: ${e}`);
         }
     }
-
-    if (tipoCrud === 'Cadastrar' || tipoCrud === 'Alterar') {
+    
+    if (tipoCrud.operacao === 'Cadastrar' || tipoCrud.operacao === 'Alterar') {        
         return (
             <div className="operacoes-produto-container">
                 <form onSubmit={handleSubmit}>
@@ -160,7 +160,7 @@ export default function OperacoesProduto({ history }){
                                             <td>{data.descricao}</td>
                                             <td>{data.valor}</td>
                                             <td style={{textAlign: "end"}}>
-                                                <span className="btn btn-warning" style={{marginRight: "10px"}}>
+                                                <span className="btn btn-warning" style={{marginRight: "10px"}} onClick={e => setTipoCrud('Alterar')}>
                                                     <svg className="bi bi-tools" style={{width: "1.2em", height: "1.2em",
                                                         viewBox: "0 0 20 20", fill: "currentColor", xmlns: "http://www.w3.org/2000/svg"}}>
                                                         <path 

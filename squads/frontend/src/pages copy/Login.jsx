@@ -23,7 +23,7 @@ export default function Login({ history }) {
                 password,
             }).then((res) => {   
                 login(res.data.token);                                                       
-                history.push('/produtos');                
+                history.push('/operacoes-produto');                
             }).catch((error) => {
                 toast.error('Usuário ou Senha Inválido.');                
             });

@@ -1,0 +1,74 @@
+.produtos-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.produtos-container h1 {
+    align-self: flex-start;
+    margin: 10px 0 0 0;
+}
+
+.produtos-container hr {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 2px solid #eee;
+}
+
+.produtos-container h4 {
+    margin-top: 15px;
+}
+
+.listar-produtos-container {
+    width: 80%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 20px;
+}
+
+.listar-produtos-container input {
+    margin-top: 12px 10px 10px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    height: 48px;
+    padding: 0 10px;
+    font-size: 16px;
+    color: #666;
+    width: 90%;
+}
+
+.listar-produtos-container #pesquisar {
+    background: #3498db;
+    padding: 12px 10px 10px 10px;
+    border: 0;
+    border-radius: 4px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: bold;    
+    cursor: pointer;
+}
+
+.listar-produtos-container input::placeholder {
+    color: #999;
+}
+
+.produtos-container #cadastrar {
+    background: #07bc0c;
+    margin: 20px 0 0 0;    
+    border: 0;
+    border-radius: 4px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 12px 20px 0 20px;
+}
+
+.listar-produtos-container #produtosView {
+    margin-top: 20px;
+}
