@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import './Login.css';
-import logo from '../assets/login.svg';
-import api from '../services/api';
-import { login } from "../services/auth";
+import './style.css';
+import logo from '../../assets/login.svg';
+import api from '../../services/api';
+import { login } from "../../services/auth";
 
 export default function Login({ history }) {
     const [username, setUsername] = useState('');                
@@ -36,17 +36,17 @@ export default function Login({ history }) {
         <div className="login-container">
             <form onSubmit={handleSubmit}>                
                 <img src={logo} alt="Squads"/>                
-                <input type="text" autoFocus
+                <input type="text" autoFocus data-cy="username"
                     placeholder="Digite seu usuário"
                     value={username} 
                     onChange={e => setUsername(e.target.value)}
                 />
-                <input type="password"
+                <input type="password" data-cy="password"
                     placeholder="Digite sua senha" 
                     value={password} 
                     onChange={e => setPassword(e.target.value)}
                 />
-                <button type="submit">Entrar</button>
+                <button type="submit" data-cy="entrar">Entrar</button>
             </form>
         </div>
     );
