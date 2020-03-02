@@ -1,0 +1,14 @@
+{
+  "dependencies": {},
+  "devDependencies": {
+    "cypress": "^4.0.2"
+  },
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress_open": "sudo $(npm bin)/cypress open",
+    "e2e": "cypress run",
+    "cy:run": "cypress run",
+    "cy:run:record": "cypress run --record",
+    "cy:open": "cypress open"
+  }
+}      

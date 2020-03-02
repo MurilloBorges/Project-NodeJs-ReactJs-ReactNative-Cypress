@@ -100,7 +100,7 @@ function OperacaoProdutos({ match: { params }, location }) {
   return (
     <div className="operacoes-produto-container">
       <form onSubmit={handleSubmit}>
-        <Link to='/produtos' className="btn btn-info" id="voltar">Voltar</Link>
+        <Link to='/produtos' className="btn btn-info" data-cy="btn-voltar" id="voltar">Voltar</Link>
         <h1>
           {params.tipoOperacao === 'editar' ?
             `Alterar Produto ${nomeFixo}` :
@@ -109,20 +109,24 @@ function OperacaoProdutos({ match: { params }, location }) {
         </h1>
         <hr />
         <h4>Nome</h4>
-        <input type="text" autoFocus placeholder="Digite o nome"
+        <input type="text" autoFocus placeholder="Digite o nome" data-cy="input-nome"
           value={nome} onChange={e => setNome(e.target.value)}
         />
         <h4>Descrição</h4>
-        <input type="text" placeholder="Digite a descrição"
+        <input type="text" placeholder="Digite a descrição" data-cy="input-descricao"
           value={descricao} onChange={e => setDescricao(e.target.value)}
         />
         <h4>Valor</h4>
-        <input type="text" maxLength="9" placeholder="0,00"
+        <input type="text" maxLength="9" placeholder="0,00" data-cy="input-valor"
           value={valor} onChange={e => setValor(e.target.value)}
         />
         <div className="operacoes-produto-frames">
-          <Link to='/produtos' className="btn btn-danger" id="cancelar">Cancelar</Link>
-          <button type="submit" className="btn btn-success" id="salvar" onClick={handleSubmit}>Salvar</button>
+          <Link to='/produtos' className="btn btn-danger" 
+            id="cancelar" data-cy="btn-cancelar">Cancelar
+          </Link>
+          <button type="submit" className="btn btn-success" 
+            id="salvar" data-cy="btn-salvar" onClick={handleSubmit}>Salvar
+          </button>
         </div>
       </form>
     </div>

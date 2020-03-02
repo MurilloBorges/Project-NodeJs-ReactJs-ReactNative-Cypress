@@ -51,8 +51,8 @@ function Produtos() {
                 <h1>Produtos</h1><hr></hr>
                 <h3>Nome</h3>
                 <div className="pesquisa">
-                    <input type="text" placeholder="Pesquisar" value={pesquisa} onChange={e => setPesquisa(e.target.value)}></input>
-                    <Link to='/produtos' className="btn btn-info" id="pesquisar">Pesquisar</Link>
+                    <input type="text" placeholder="Pesquisar" data-cy="input-pesquisar" value={pesquisa} onChange={e => setPesquisa(e.target.value)}></input>
+                    <Link to='/produtos' className="btn btn-info" data-cy="btn-pesquisar" id="pesquisar">Pesquisar</Link>
                 </div>
                 <div id="produtosView">
                     <table className="table table-striped">
@@ -75,7 +75,7 @@ function Produtos() {
                                             <td>{data.descricao}</td>
                                             <td>{data.valor}</td>
                                             <td style={{ textAlign: "end" }}>
-                                                <Link to={`/produtos/editar?id=${data._id}`} className="btn btn-warning" style={{ marginRight: "10px" }} >
+                                                <Link to={`/produtos/editar?id=${data._id}`} data-cy="btn-editar" className="btn btn-warning" style={{ marginRight: "10px" }} >
                                                     <svg className="bi bi-tools" style={{
                                                         width: "1.2em", height: "1.2em",
                                                         viewBox: "0 0 20 20", fill: "currentColor", xmlns: "http:www.w3.org/2000/svg"
@@ -88,7 +88,7 @@ function Produtos() {
                                                         </path>
                                                     </svg>
                                                 </Link>
-                                                <span className="btn btn-danger" onClick={() => handleRemover(data._id, index)}>
+                                                <span className="btn btn-danger" data-cy="btn-remover" onClick={() => handleRemover(data._id, index)}>
                                                     <svg className="bi bi-trash-fill" style={{
                                                         width: "1.2em", height: "1.2em",
                                                         viewBox: "0 0 20 20", fill: "currentColor", xmlns: "http:www.w3.org/2000/svg"
@@ -110,7 +110,7 @@ function Produtos() {
                         </tbody>
                     </table>
                 </div>
-                <Link to="/produtos/cadastrar" className="btn btn-info" id="cadastrar">Cadastrar produto</Link>
+                <Link to="/produtos/cadastrar" data-cy="btn-cadastrar" className="btn btn-info" id="cadastrar">Cadastrar produto</Link>
             </div>
         </div>
     );
